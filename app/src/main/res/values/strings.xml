@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Prague Guide</string>
+
+
+    <!-- Main Attractions -->
+    <!-- Prague Castle -->
+    <string name="prague_castle_name">Prague Castle</string>
+    <string name="prague_castle_address">Address: 119 08 Prague 1</string>
+    <string name="prague_castle_description">Prague Castle has been an important symbol of the Czech
+        state for more than a thousand years. It was founded in the 9th century and became the seat
+        of Czech rulers and later presidents. The castle, one of the largest complexes in the world,
+        is made up of historical palaces, offices, church and fortification buildings, gardens and
+        picturesque spots. It covers an area of 45 hectares. The panoramic view of Prague Castle is
+        one of the most spectacular in the world. </string>
+
+    <!-- Charles Bridge -->
+    <string name="charles_bridge_name">Charles Bridge</string>
+    <string name="charles_bridge_address">Address: Karlův most, 110 00 Prague 1</string>
+    <string name="charles_bridge_description">Charles Bridge is a historic bridge that crosses the
+        Vltava river in Prague, Czech Republic. Its construction started in 1357 under the auspices
+        of King Charles IV, and finished in the beginning of the 15th century.</string>
+
+    <!-- Old Town -->
+    <string name="old_town_name">Old Town</string>
+    <string name="old_town_address">Address: Prague 1</string>
+    <string name="old_town_description">Old Town, or Staré Mesto, is a lively cobblestoned hub with
+        landmark attractions such as the medieval Astronomical Clock and the Gothic Church of Our
+        Lady Before Týn, on Old Town Square. The Rudolfinum concert hall hosts classical music,
+        while the Estates Theatre stages ballet and opera. Student nightlife is centered around the
+        vast 5-story Karlovy Lázně dance club.</string>
+
+    <!-- St. Vitus Cathedral -->
+    <string name="vitus_cathedral_name">St. Vitus Cathedral</string>
+    <string name="vitus_cathedral_address">Address: III. nádvoří 48/2, 119 01 Prague 1</string>
+    <string name="vitus_cathedral_description">Built over a time span of almost 600 years, St Vitus
+        is one of the most richly endowed cathedrals in central Europe. It is pivotal to the
+        religious and cultural life of the Czech Republic, housing treasures that range from the
+        14th-century mosaic of the Last Judgement and the tombs of St Wenceslas and Charles IV, to
+        the baroque silver tomb of St John of Nepomuck, the ornate Chapel of St Wenceslas, and art
+        nouveau stained glass by Alfons Mucha</string>
+
+    <!-- Clubs -->
+    <!-- Karlovy Lazne -->
+    <string name="karlovy_lazne_name">Karlovy lázně</string>
+    <string name="karlovy_lazne_address">Address: Novotného lávka 198/13, 110 00 Praha-Staré Město</string>
+    <string name="karlovy_lazne_description">Karlovy Lazne is the largest facility of its kind in
+        Central Europe. Thanks to its five music clubs on five separate floors, it is also one of
+        the best technically equipped club’s in the world. The themed floors are one-of-a-kind for
+        their original character, which is further enhanced by the historical interior and
+        architecture of the building built at the turn of the 15th century, which have been
+        preserved. Together with modern facilities and music to suit all tastes certainly creates
+        an entirely unique atmosphere, which has made Karlovy Lazne one of the most visited dance
+        club’s in the Czech Republic.</string>
+
+    <!-- Roxy -->
+    <string name="roxy_name">Roxy Prague</string>
+    <string name="roxy_address">Address: Dlouhá 33, 110 00 Staré Město</string>
+    <string name="roxy_description">Since its opening in 1992 ROXY has become one of the most
+        important places of local dance scene, where many of legendary concerts have taken part.
+        You can also visit cafe, gallery and theater NoD which is right above ROXY club.</string>
+
+    <!-- Nebe -->
+    <string name="nebe_name">Nebe</string>
+    <string name="nebe_address">Address: Václavské nám. 802/56, 110 00 Nové Město</string>
+    <string name="nebe_description">Also called Heaven, location is directly on fun-packed Wenceslas
+        Square, right in the heart of Prague, making a night out ultra-easy and convenient, as well
+        as just plain fun. This Nebe location features an amazing glowing-sphere light fixture set
+        with angels, and distinctly Art Deco design all around the stylish bar to ensure that your
+        Prague nightlife experience will be so very heavenly, as its name implies.</string>
+
+    <!-- Cross Club -->
+    <string name="cross_club_name">Cross Club</string>
+    <string name="cross_club_address">Address: Plynární 1096/23, 170 00 Holešovice</string>
+    <string name="cross_club_description">The Cross club is a uniquely designed multicultural centre
+        which houses a real crossroads of cultures and a variety of styles and genres in the centre
+        of Prague Holešovice. For many years, the Cross club has been an integral part of the Prague
+        cultural scene, respected not only in the Czech Republic, but also abroad.</string>
+
+    <!-- Parks -->
+    <!-- Letna park -->
+    <string name="letna_park_name">Letná Park</string>
+    <string name="letna_park_address">Address: 7, Praha, Praha 7</string>
+    <string name="letna_park_description">This extensive park with grassy areas, mature trees, a
+        colorful assortment of bushes planted on the hillsides, and a long plane tree-lined avenue
+        provides not only a pleasant to sit and relax, but also unparalleled views of the city,
+        especially from the Hanavský Pavilion - a unique cast-iron building with a restaurant.</string>
+
+    <!-- Petrin park -->
+    <string name="petrin_park_name">Petřín Park</string>
+    <string name="petrin_park_address">Address: Petřínské sady 417/5, 118 00 Praha 1</string>
+    <string name="petrin_park_description">Petřín Park is one of the largest urban green areas and
+        its slopes are an oasis of calm in the center of Prague. The Rose Garden, or rosarium, at
+        the top of Petrin Hill, Nebozízek Garden and the Seminary Garden with more than 2,100 fruit
+        trees are particularly magical</string>
+
+    <!-- Vitkov park -->
+    <string name="vitkov_name">Park Vítkov</string>
+    <string name="vitkov_address">Address: 130 00 Prague 3</string>
+    <string name="vitkov_description">The dominant feature of this nearly 3 km-long inline track is
+        the well-lit tunnel, which takes you from one side of Vitkov Hill to the other, onto a
+        bridge across Koněvova street, on which you can skate all the way to the main train station.</string>
+
+    <!-- Riegrovy sady -->
+    <string name="riegrovy_sady_name">Riegrovy Sady</string>
+    <string name="riegrovy_sady_address">Address: Riegrovy sady, Praha 2</string>
+    <string name="riegrovy_sady_description">Located in the gorgeous Art Nouveau district of
+        Vinohrady bordering Zizkov is the lush and rather large Riegrovy Sady (Rieger’s Park). This
+        pleasant park stretches between Italská, Chopinova, Polská, and Vozová streets and is one of
+        the most popular leisure spots in Prague 2.</string>
+
+    <!-- Bars -->
+    <!-- Vzorkovna -->
+    <string name="vzorkovna_name">Vzorkovna</string>
+    <string name="vzorkovna_address">Address: Národní 339/11, 110 00 Staré Město</string>
+    <string name="vzorkovna_description">Vzorkovna is a multi-functional, alternative, and cultural
+        hodgepodge – the best of what Prague’s creative people have to offer. Dark nooks and candles
+        that leave tracks of time behind. Meeting point for musicians who come to jam with others.
+        Unetice beer, wine or tea, everything served in jam jars. A good place to hide.</string>
+
+    <!-- Harley's -->
+    <string name="harleys_name">Harley\'s</string>
+    <string name="harleys_address">Address: Dlouhá 704/18, 110 00 Staré Město</string>
+    <string name="harleys_description">Harley’s Bar is labeled as the ‘coolest Hell on earth’ making
+        it definitely an interesting bar to check out while hanging out in the center of gorgeous
+        Prague. The hip cellar bar is one of the most popular Prague nighttime hangouts making it
+        the place to be on nights out with your friends.</string>
+
+    <!-- Chapeau Rouge -->
+    <string name="chapeau_rouge_name">Chapeau Rouge</string>
+    <string name="chapeau_rouge_address">Address: Jakubská 2, Praha 1</string>
+    <string name="chapeau_rouge_description">In the popular Chapeau Rouge club / bar, open since
+        1919, you will find a variety of rooms and levels to match your variety of moods. Chapeau
+        Rouge has in fact, three floors, four bars, and three stages. Depending on what you seek,
+        Prague's renowned Chapeau Rouge will definitely satisfy. If you happen to be heading to the
+        Chapeau for a live show, then you will most definitely not be disappointed.</string>
+
+    <!-- M1 Lounge -->
+    <string name="m1_lounge_name">M1 Lounge</string>
+    <string name="m1_lounge_address">Address: Masna 1, Praha 1</string>
+    <string name="m1_lounge_description">Located in the hip city center of Prague close to the
+        gorgeous Old Town Square is the super popular M1 Lounge, one of the best places to be seen
+        doing the nightlife rounds in Prague. This stylish and happening place has it all and when
+        the sun goes down you can be sure that all the beautiful people in the city flock to M1
+        searching for fun, good music to dance to, mischief, strong mouthwatering cocktails, smoking
+        shishas and much more.</string>
+
+
+</resources>
