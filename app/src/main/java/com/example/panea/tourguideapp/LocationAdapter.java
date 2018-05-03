@@ -1,96 +1,69 @@
-package com.example.panea.tourguideapp;
-
-import android.annotation.TargetApi;
-import android.app.Activity;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.text.Layout;
+package com.example.panea.tourguideapp;import android.graphics.Movie;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import com.example.panea.tourguideapp.R;
 
+import java.util.List;
 
-public class LocationAdapter extends ArrayAdapter<TheLocation> {
+public class LocationAdapter extends RecyclerView.Adapter<LocationAdapter.MyViewHolder> {
+    private int mExpandedPosition = -1;
+    private List<TheLocation> locationsList;
 
-    /**
-     * This is our own custom constructor (it doesn't mirror a superclass constructor).
-     * The context is used to inflate the layout file, and the list is the data we want
-     * to populate into the lists.
-     *
-     * @param context The current context. Used to inflate the layout file.
-     * @param locations   A List of locations objects to display in a list
-     */
-    public LocationAdapter(Activity context, ArrayList<TheLocation> locations) {
-        // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
-        // the second argument is used when the ArrayAdapter is populating a single TextView.
-        // Because this is a custom adapter for three TextViews and an ImageView, the adapter is not
-        // going to use this second argument, so it can be any value. Here, we used 0.
-        super(context, 0, locations);
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public TextView location_name, location_address, location_description;
+        public ImageView location_image;
+
+        public MyViewHolder(View view) {
+            super(view);
+            location_name = (TextView) view.findViewById(R.id.location_name_text_view);
+            location_address = (TextView) view.findViewById(R.id.location_address_text_view);
+            location_description = (TextView) view.findViewById(R.id.location_description_text_view);
+            location_image = (ImageView) view.findViewById(R.id.location_image);
+        }
     }
 
-    /**
-     * Provides a view for an AdapterView (ListView, GridView, etc.)
-     *
-     * @param position    The position in the list of data that should be displayed in the
-     *                    list item view.
-     * @param convertView The recycled view to populate.
-     * @param parent      The parent ViewGroup that is used for inflation.
-     * @return The View for the position in the AdapterView.
-     */
-    @NonNull
-    @TargetApi(26)
+
+    public LocationAdapter(List<TheLocation> locationsList) {
+        this.locationsList = locationsList;
+    }
+
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        // Check if the existing view is being reused, otherwise inflate the view
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item, parent, false);
-        }
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.list_item, parent, false);
 
-        // Get the {@link TheLocation} object located at this position in the list
-        TheLocation currentLocation = getItem(position);
-
-        // Find the TextView in the list_item.xml layout with the ID location_name_text_view
-        TextView locationNameTextView = (TextView) listItemView.findViewById(R.id.location_name_text_view);
-        // Get the location name from the current TheLocation object and
-        // set this text on the name TextView
-        locationNameTextView.setText(currentLocation.getLocationName());
-
-        // Find the TextView in the list_item.xml layout with the ID location_address_text_view
-        TextView locationAddressTextView = (TextView) listItemView.findViewById(R.id.location_address_text_view);
-        // Get the location name from the current TheLocation object and
-        // set this text on the name TextView
-        locationAddressTextView.setText(currentLocation.getLocationAddress());
-
-        // Find the TextView in the list_item.xml layout with the ID description_text_view
-        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.location_description_text_view);
-        // Get the location name from the current TheLocation object and
-        // set this text on the name TextView
-        descriptionTextView.setText(currentLocation.getDescription());
-
-        descriptionTextView.setJustificationMode(Layout.JUSTIFICATION_MODE_INTER_WORD);
-
-        // Find the ImageView in the list_item.xml layout with the ID location_image
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.location_image);
-        // Get the image resource ID from the current TheLocation object and
-        // set the image to iconView
-        if (currentLocation.hasImage()) {
-
-            iconView.setImageResource(currentLocation.getImageResourceId());
-            iconView.setVisibility(View.VISIBLE);
-        } else {
-            iconView.setVisibility(View.GONE);
-        }
-        // Return the whole list item layout (containing 3 TextViews and an ImageView)
-        // so that it can be shown in the ListView
-        return listItemView;
+        return new MyViewHolder(itemView);
     }
 
+    @Override
+    public void onBindViewHolder(MyViewHolder holder, final int position) {
+        TheLocation location = locationsList.get(position);
+        holder.location_name.setText(location.getLocationName());
+        holder.location_address.setText(location.getLocationAddress());
+        holder.location_description.setText(location.getDescription());
+        holder.location_image.setImageResource(location.getImageResourceId());
+
+        // Expand the description on item click
+        final boolean isExpanded = position==mExpandedPosition;
+        holder.location_description.setVisibility(isExpanded?View.VISIBLE:View.GONE);
+        holder.itemView.setActivated(isExpanded);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mExpandedPosition = isExpanded ? -1:position;
+
+                notifyItemChanged(position);
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount() {
+        return locationsList.size();
+    }
 }
